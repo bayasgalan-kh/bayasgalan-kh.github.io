@@ -236,7 +236,6 @@
           .attr('data-expanded', $(e.currentTarget).attr('data-expanded') === 'true' ? 'false' : 'true');
         $searchContainer
           .attr('area-expanded', $searchContainer.attr('area-expanded') === 'true' ? 'false' : 'true');
-          // .slideToggle(250);
       });
     }
 
@@ -469,8 +468,8 @@
     });
 
     // next button
-    $('.js-mobile-menu-next').on('click', ({ target }) => {
-      const $panel = $(target).next(),
+    $('.js-mobile-menu-next, .js-mobile-menu-next-title').on('click', ({ target }) => {
+      const $panel = $(target).siblings('.nav-main-panel'),
             level = $panel.attr('data-nav-level'),
             height = $panel.height()
       ;
