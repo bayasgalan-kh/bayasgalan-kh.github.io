@@ -10761,6 +10761,9 @@ html[data-mobile-menu=open] .mobile-menu {
   padding-left: 40px;
   padding-top: 20px;
 }
+.menu-dropdown-item .nav-section-last {
+  padding: 20px 0;
+}
 .menu-dropdown-item .nav-section li {
   font-size: 14px;
   font-size: 0.875rem;
